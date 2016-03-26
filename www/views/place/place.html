@@ -1,0 +1,23 @@
+<ion-view view-title="{{vm.place.name}}">
+  <ion-nav-buttons side="right">
+    <button class="button button-clear" ng-click="vm.openSheet()">
+      <i class="icon ion-ios-upload-outline"></i>
+    </button>
+  </ion-nav-buttons>
+  <ion-content>
+    <div class="card" ng-if="vm.place">
+      <div class="item item-text-wrap item-icon-left">
+        <i class="icon ion-map"></i> {{vm.place.formatted_address}}</p>
+      </div>
+      <div class="item item-image" ng-if="vm.place.photos[0].photo_reference">
+        <img ng-src="{{vm.photo_base + vm.place.photos[0].photo_reference}}">
+      </div>
+      <a ng-if="vm.place.website" class="item item-icon-left" ng-href="{{vm.place.website}}" target="_system">
+        <i class="icon ion-link"></i> {{vm.place.website}}
+      </a>
+      <a ng-if="vm.place.formatted_phone_number" class="item item-icon-left" ng-href="tel://{{vm.place.formatted_phone_number}}">
+        <i class="icon ion-ios-telephone"></i> {{vm.place.formatted_phone_number}}
+      </a>
+    </div>
+  </ion-content>
+</ion-view>

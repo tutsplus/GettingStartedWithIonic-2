@@ -1,7 +1,7 @@
 <ion-view view-title="Local Parks" hide-back-button="true">
   <ion-content>
     <ion-list>
-      <ion-item ng-repeat="place in vm.places" class="item-avatar">
+      <ion-item ng-repeat="place in vm.places" class="item-avatar" ui-sref="place({place_id: place.place_id})">
         <img ng-src="{{place.icon}}" />
         <h2>{{place.name}}</h2>
         <p>{{place.formatted_address}}</p>
