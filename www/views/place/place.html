@@ -10,7 +10,7 @@
         <i class="icon ion-map"></i> {{vm.place.formatted_address}}</p>
       </div>
       <div class="item item-image" ng-if="vm.place.photos[0].photo_reference">
-        <img ng-src="{{vm.photo_base + vm.place.photos[0].photo_reference}}">
+        <img ng-src="{{'https://civinfo-apis.herokuapp.com/civic/photo?photo_id=' + vm.place.photos[0].photo_reference}}">
       </div>
       <a ng-if="vm.place.website" class="item item-icon-left" ng-href="{{vm.place.website}}" target="_system">
         <i class="icon ion-link"></i> {{vm.place.website}}

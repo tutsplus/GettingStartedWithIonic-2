@@ -12,14 +12,13 @@ angular.module('App')
     }
   });
 })
-.controller('PlaceController', function($scope, $stateParams, $http, $ionicLoading, $ionicActionSheet, Place) {
+.controller('PlaceController', function($scope, $ionicLoading, $ionicActionSheet, Place) {
   var vm = this;
 
   $scope.$on('$ionicView.afterEnter', function() {
     $ionicLoading.hide();
   });
 
-  vm.photo_base = 'https://civinfo-apis.herokuapp.com/civic/photo?photo_id=';
   vm.place = Place.data.result;
 
   vm.openSheet = function() {
