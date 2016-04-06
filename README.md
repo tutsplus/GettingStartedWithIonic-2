@@ -1,11 +1,17 @@
-# Sample App for Ionic Tutorial Series Part 3 - Services
+### Envato Tuts+ Tutorial: Getting Started With Ionic: Services
 
-This sample app demonstrates the use of a number of Ionic services.
+#### Instructor: Jeremy Wilken
 
-### Setup
+In this tutorial, we take a closer look at Ionic services. Ionic services are useful for managing certain types of interactions that are short lived, such as loading indicators or action sheet buttons.
 
-* Ensure you have [NodeJS](https://nodejs.org) setup, recommend being up to date!
-* Ensure you have Ionic installed `npm install -g ionic`
-* Download the code `git clone https://github.com/gnomeontherun/civinfo-part-2.git`
-* Install dependencies `npm install`
-* Preview the app `ionic serve`
+Source files for the Envato Tuts+ tutorial: [Getting Started With Ionic: Services](http://code.tutsplus.com/tutorials/getting-started-with-ionic-services--cms-26278)
+
+**Read this tutorial on [Envato Tuts+](https://code.tutsplus.com)**.
+
+#### Setup
+
+* ensure you have [Node.js](https://nodejs.org) set up and that it is up to date
+* ensure you have Ionic installed `npm install -g ionic`
+* clone the repository `git clone https://github.com/gnomeontherun/civinfo-part-2.git`
+* install the dependencies `npm install`
+* preview the app `ionic serve`
